@@ -18,6 +18,7 @@ main {
 }
 
 footer {
+  position: sticky;
   background-color: #282c34;
   color: white;
   font-size: 16px;

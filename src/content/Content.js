@@ -2,7 +2,7 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
 
-// Custom componentd
+// Custom components
 import Home from './pages/Home'
 import Login from './pages/Login'
 import Profile from './pages/Profile'
@@ -13,13 +13,13 @@ const Content = props => {
     <div className="container">
       <Route exact path="/" component={Home} />
       <Route path="/login" render={
-        () => <Login user={props.user} updateUser={props.updateUser} />
+        () => <Login user={props.user} updateToken={props.updateToken} />
       } />
       <Route path="/profile" render={
         () => <Profile user={props.user} />
       } />
       <Route path="/signup" render={
-        () => <Signup user={props.user} updateUser={props.updateUser} />
+        () => <Signup user={props.user} updateToken={props.updateToken} />
       } />
     </div>
   )
